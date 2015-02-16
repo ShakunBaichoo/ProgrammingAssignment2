@@ -86,3 +86,18 @@ cacheSolve <- function(x, ...) {
 ##
 ## Note that the second run will get inverse from cache
 ##
+
+## Sample run2:
+## > m<-matrix(rnorm(9),nrow=3)
+## > m1<-makeCacheMatrix(m)
+## > cacheSolve(m1)
+## [,1]      [,2]       [,3]
+## [1,]  0.1179517 0.3095080 -0.8722886
+## [2,]  0.7322971 0.3085942 -1.6771432
+## [3,] -0.4952500 0.1968647  1.4522458
+## > cacheSolve(m1)
+## getting cached data
+## [,1]      [,2]       [,3]
+## [1,]  0.1179517 0.3095080 -0.8722886
+## [2,]  0.7322971 0.3085942 -1.6771432
+## [3,] -0.4952500 0.1968647  1.4522458
